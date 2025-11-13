@@ -1,0 +1,102 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #005bea, #00c6fb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+
+.contenedor {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 600px;
+  transition: transform 0.4s ease;
+}
+
+.contenedor:hover {
+  transform: scale(1.02);
+}
+
+
+h1 {
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  margin-bottom: 25px;
+  animation: aparecer 1.5s ease;
+}
+#boton {
+  background-color: #ffd700;
+  color: #222;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#boton:hover {
+  background-color: #fff35b;
+  transform: scale(1.08);
+}
+
+#foto {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  animation: aparecer 1.5s ease;
+}
+
+
+#titulo1 {
+  font-size: 1.8em;
+  color: #fff;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: brillo 2s infinite alternate;
+}
+
+#prediccion1 {
+  font-size: 1.1em;
+  margin-top: 10px;
+  color: #f0f0f0;
+  font-style: italic;
+}
+
+/* 🌈 Animaciones */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes brillo {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ffe600;
+  }
+  to {
+    text-shadow: 0 0 15px #fff, 0 0 30px #ff9d00;
+  }
+}
